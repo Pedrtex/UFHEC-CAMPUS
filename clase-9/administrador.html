@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFHEC CAMPUS | Administración</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 012-2h14v14H6a2 2 0 00-2 2zm0 0a2 2 0 002 2h14"/></symbol>
+<symbol id="i-task" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9z"/><path d="M8.5 12h7M8.5 16h5"/></symbol>
+<symbol id="i-grade" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+<symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></symbol>
+<symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16v-5a6 6 0 0112 0v5l2 2H4z"/><path d="M10 21h4"/></symbol>
+<symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9L7 7M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></symbol>
+<symbol id="i-inbox" viewBox="0 0 24 24"><path d="M3 13l3-8h12l3 8v6H3z"/><path d="M3 13h5l1 3h6l1-3h5"/></symbol>
+<symbol id="i-mega" viewBox="0 0 24 24"><path d="M3 10v4h4l8 5V5L7 10z"/><path d="M18 9a4 4 0 010 6"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-4 3-6 7-6s7 2 7 6"/><path d="M16 4.5a3.5 3.5 0 010 7M18 14c2.5.6 4 2.4 4 6"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.5 3.5-7 8-7s8 2.5 8 7"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><path d="M8 16v-5M12 16V8M16 16v-8"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 20h16"/></symbol>
+<symbol id="i-test" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 002 3h10a2 2 0 002-3l-5-9V3"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></symbol>
+<symbol id="i-teacher" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="11" rx="1.5"/><path d="M8 20l4-5 4 5M12 15v-1"/></symbol>
+<symbol id="i-admin" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+</defs></svg>
+  <div class="app">
+    <input type="checkbox" id="toggle-menu" hidden>
+
+    <aside class="sidebar">
+      <a href="index.html" class="logo-bloque">
+        <img src="logo.png" alt="UFHEC-CAMPUS, una sola plataforma, una mejor experiencia universitaria">
+        <div class="rol-etiqueta">Portal administrativo</div>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="administrador.html" class="activo"><svg class="i"><use href="#i-home"/></svg> Inicio</a></li>
+          <li><a href="#"><svg class="i"><use href="#i-cap"/></svg> Estudiantes</a></li>
+          <li><a href="#"><svg class="i"><use href="#i-teacher"/></svg> Docentes</a></li>
+          <li><a href="#"><svg class="i"><use href="#i-book"/></svg> Asignaturas</a></li>
+          <li><a href="#"><svg class="i"><use href="#i-clock"/></svg> Horarios</a></li>
+          <li><a href="#"><svg class="i"><use href="#i-shield"/></svg> Usuarios y permisos</a></li>
+          <li><a href="#"><svg class="i"><use href="#i-mega"/></svg> Comunicados</a></li>
+          <li><a href="#"><svg class="i"><use href="#i-chart"/></svg> Reportes</a></li>
+          <li><a href="#"><svg class="i"><use href="#i-bell"/></svg> Notificaciones<span class="badge">4</span></a></li>
+          <li><a href="#"><svg class="i"><use href="#i-gear"/></svg> Configuración</a></li>
+        </ul>
+      </nav>
+      <div class="portales">
+        <small>Cambiar de portal</small>
+        <a href="index.html">Página principal</a>
+        <a href="estudiante.html">Estudiantes</a>
+        <a href="docente.html">Docentes</a>
+        <a href="administrador.html" class="actual">Administrativos</a>
+      </div>
+    </aside>
+
+    <header class="header">
+      <label for="toggle-menu" class="btn-menu" aria-label="Abrir menú"><svg class="i"><use href="#i-menu"/></svg></label>
+      <h1>Inicio</h1>
+      <form class="buscador" role="search">
+        <svg class="i"><use href="#i-search"/></svg>
+        <input type="search" placeholder="Buscar usuarios, asignaturas, horarios...">
+      </form>
+      <button class="icon-btn" aria-label="Notificaciones"><svg class="i"><use href="#i-bell"/></svg><span class="punto"></span></button>
+      <div class="perfil" tabindex="0">
+        <div class="avatar">AD</div>
+        <div class="datos"><strong>Ana Delgado</strong><small>Administradora</small></div>
+        <div class="perfil-menu">
+          <a href="#">Mis datos personales</a>
+          <a href="#">Configuración</a>
+          <a href="index.html" class="salir">Cerrar sesión</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="col-principal">
+        <section class="card bienvenida">
+          <div>
+            <h2>Panel de administración</h2>
+            <p>Supervisa la información general de la plataforma y gestiona usuarios, asignaturas y horarios.</p>
+            <div class="meta"><span>Administrador</span><span>Registro y Control Académico</span></div>
+          </div>
+          <div class="fecha">Hoy es<strong>Lunes, 9 de noviembre de 2026</strong></div>
+        </section>
+        <section class="resumen">
+          <article class="stat"><span>Estudiantes activos</span><strong>1,240</strong></article>
+          <article class="stat"><span>Docentes</span><strong>68</strong></article>
+          <article class="stat"><span>Asignaturas</span><strong>94</strong></article>
+          <article class="stat"><span>Solicitudes pendientes</span><strong>7</strong></article>
+        </section>
+        <section class="card">
+          <div class="card-titulo"><h2>Gestión rápida</h2></div>
+          <div class="acciones">
+            <a href="#" class="accion"><svg class="i"><use href="#i-cap"/></svg><span>Gestionar estudiantes<small>Altas, bajas e inscripciones</small></span></a>
+            <a href="#" class="accion"><svg class="i"><use href="#i-teacher"/></svg><span>Gestionar docentes<small>Asignación de carga académica</small></span></a>
+            <a href="#" class="accion"><svg class="i"><use href="#i-book"/></svg><span>Administrar asignaturas<small>Crear y editar materias</small></span></a>
+            <a href="#" class="accion"><svg class="i"><use href="#i-clock"/></svg><span>Controlar horarios<small>Aulas, días y franjas</small></span></a>
+            <a href="#" class="accion"><svg class="i"><use href="#i-shield"/></svg><span>Usuarios y permisos<small>Roles y accesos</small></span></a>
+            <a href="#" class="accion"><svg class="i"><use href="#i-mega"/></svg><span>Publicar comunicado<small>Avisos institucionales</small></span></a>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-titulo"><h2>Usuarios recientes</h2><a href="#">Ver todos</a></div>
+          <div class="tabla-wrap"><table>
+            <thead><tr><th>Usuario</th><th>Rol</th><th>Registro</th><th>Estado</th><th></th></tr></thead>
+            <tbody>
+                <tr><td><strong>Luis Almonte</strong><small>luis.almonte@ufhec.edu</small></td><td>Estudiante</td><td>08/11/2026</td><td><span class="estado activo">Activo</span></td><td><a href="#" class="btn borde">Editar</a></td></tr>
+                <tr><td><strong>Roberto Díaz</strong><small>roberto.diaz@ufhec.edu</small></td><td>Docente</td><td>05/11/2026</td><td><span class="estado alerta">Pendiente</span></td><td><a href="#" class="btn ">Aprobar</a></td></tr>
+                <tr><td><strong>Sofía Ramírez</strong><small>sofia.ramirez@ufhec.edu</small></td><td>Estudiante</td><td>02/11/2026</td><td><span class="estado inactivo">Inactivo</span></td><td><a href="#" class="btn borde">Editar</a></td></tr>
+            </tbody>
+          </table></div>
+        </section>
+        <section class="card">
+          <div class="card-titulo"><h2>Ocupación de asignaturas</h2></div>
+          <p style="font-size:14px">Base de Datos II · 60 de 70 cupos<span class="barra"><span style="width:86%"></span></span></p>
+          <p style="font-size:14px;margin-top:14px">Ingeniería de Software · 48 de 60 cupos<span class="barra"><span style="width:80%"></span></span></p>
+          <p style="font-size:14px;margin-top:14px">Redes de Computadoras · 25 de 40 cupos<span class="barra"><span style="width:62%"></span></span></p>
+        </section>
+      </div>
+      <aside class="col-lateral">
+        <section class="card">
+          <div class="card-titulo"><h2>Actividad reciente</h2></div>
+          <div class="log"><svg class="i"><use href="#i-user"/></svg><div>Nuevo estudiante registrado<small>Hace 10 minutos</small></div></div>
+          <div class="log"><svg class="i"><use href="#i-clock"/></svg><div>Horario modificado: INF-415<small>Hace 1 hora</small></div></div>
+          <div class="log"><svg class="i"><use href="#i-shield"/></svg><div>Permisos actualizados a un docente<small>Hace 3 horas</small></div></div>
+          <div class="log"><svg class="i"><use href="#i-mega"/></svg><div>Comunicado publicado<small>Ayer</small></div></div>
+        </section>
+        <section class="card">
+          <div class="card-titulo"><h2>Recordatorios</h2></div>
+          <div class="recordatorio">7 solicitudes de acceso esperan aprobación.</div>
+          <div class="recordatorio">El período de retiro de asignaturas cierra el 20 de noviembre.</div>
+        </section>
+        <section class="card">
+          <div class="card-titulo"><h2>Comunicados publicados</h2><a href="#">Ver más</a></div>
+          <article class="anuncio"><h4>Calendario de exámenes parciales</h4><p>Disponible para todos los estudiantes y docentes.</p><small>08/11/2026 · Dirección Académica</small></article>
+          <article class="anuncio"><h4>Semana de la Tecnología UFHEC</h4><p>Charlas, talleres y exposiciones abiertas a la comunidad.</p><small>05/11/2026 · Bienestar Estudiantil</small></article>
+        </section>
+      </aside>
+      <footer>© 2026 UFHEC-CAMPUS · Todos los derechos reservados</footer>
+    </main>
+  </div>
+</body>
+</html>
